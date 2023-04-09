@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>coffeeshop</title>
+    <link rel="stylesheet" href="coffee.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-
+      awesome/5.15.4/css/all.min.css"
+      integrity="sha512-
+      1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E
+      6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body onload="offer()">
+    <div id="fers">
+      <h1>it is your time</h1>
+      <h2>fresh coffee</h2>
+      <strong>25% OFF</strong><br />
+      <button class="btn" onclick="on()">ok</button>
+    </div>
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="logo2.jpg" alt="..." height="80px" width="80px" />
+      </a>
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">About</a>
+        <a href="#menu">menu</a>
+        <a href="#products">products</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+      </nav>
+      <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+      </div>
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box" class="fas fa-search"></label>
+      </div>
+      <div class="cart-items-container">
+        <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="green.jpg" alt="coffee" />
+          <div class="content">
+            <h3>cart item 01</h3>
+            <div class="price">Rs.150</div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="green.jpg" alt="green coffee" />
+          <div class="content">
+            <h3>cart item 02</h3>
+            <div class="price">Rs.15.99/-</div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="green.jpg" alt="coffee" />
+          <div class="content">
+            <h3>cart item 03</h3>
+            <div class="price">Rs.150/-</div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="green.jpg" alt="green coffee" />
+          <div class="content">
+            <h3>cart item 04</h3>
+            <div class="price">Rs.150/-</div>
+          </div>
+        </div>
+        <a href="#" class="btn">checkout now</a>
+      </div>
+    </header>
+    <section class="home" id="home">
+      <div class="content">
+        <h3>fresh coffee in the morning</h3>
+        <p>
+          To me, the smell of fresh made coffee is one of the greatest
+          inventions.Given enough coffee, I could rule the world.Without coffee,
+          nothing gets written. Period.
+        </p>
+        <a href="#" class="btn">get your now</a>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <h1 class="heading"><span>About</span>coffee</h1>
+      <div class="row">
+        <div class="image">
+          <img src="aboutus.jpeg" />
+        </div>
+        <div class="content">
+          <h3>why we choose this?</h3>
+          <p>
+            Benefits of coffee: your body may process glucose better. you are
+            less likely to develop heart failure. your liver will thank you.
+            your DNA will be stronger. you are less likely to develop
+            parkinson's disease.
+          </p>
+          <a href="https://www.ncausa.org/About-Coffee" class="btn"
+            >learn more</a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="menu" id="menu">
+      <h1 class="heading">our<span>menu</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="cuppucino.jpg" width="250px" height="190px" />
+          <h3>cappucino coffee</h3>
+          <div class="price">Rs.150</div>
+          <button id="btnopendialog" onclick="opendialog()">order now</button>
+          <div id="mydialog">
+            <input type="text" id="nm" placeholder="enter your name" required /><br />
+            <input
+              type="text"
+              id="tx"
+              placeholder="enter your phone no" /><br /> 
+            <textarea
+              rows="3"
+              cols="25"
+              id="area"
+              placeholder="enter your address">
+            </textarea
+            ><br />
+            <button class="btn" onclick="closedialog()">close</button>
+            <button class="btn" onclick="ok()">ok</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="mocha.jpg" width="250px" height="190px" />
+          <h3>mocha coffee</h3>
+          <div class="price">Rs.100</div>
+          <!-- <a href="#" class="btn">order now</a> -->
+          <button id="btnopendialog" onclick="opendialog()">order now</button>
+        </div>
+        <div class="box">
+          <img src="latte.jpg" width="250px" height="190px" />
+          <h3>latte coffee</h3>
+          <div class="price">Rs.65</div>
+          <!-- <a href="#" class="btn">order now</a> -->
+          <button id="btnopendialog" onclick="opendialog()">order now</button>
+        </div>
+        <div class="box">
+          <img src="black.jpg" width="250px" height="190px" />
+          <h3>black coffee</h3>
+          <div class="price">Rs.100</div>
+          <!-- <a href="#" class="btn">order now</a> -->
+          <button id="btnopendialog" onclick="opendialog()">order now</button>
+        </div>
+        <div class="box">
+          <img src="cold.jpg" width="250px" height="190px" />
+          <h3>cold coffee</h3>
+          <div class="price">Rs.80</div>
+          <!-- <a href="#" class="btn">order now</a> -->
+          <button id="btnopendialog" onclick="opendialog()">order now</button>
+        </div>
+        <div class="box">
+          <img src="mocha.jpg" width="250px" height="190px" />
+          <h3>healthy and tasty</h3>
+          <div class="price">Rs.100</div>
+          <!-- <a href="#" class="btn">order now</a> -->
+          <button id="btnopendialog" onclick="opendialog()">order now</button>
+        </div>
+      </div>
+    </section>
+    <section class="products" id="products">
+      <h1 class="heading">our<span>products</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="product1.jpeg" />
+          </div>
+          <div class="content">
+            <h3>cafe desire</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <!-- <div> -->
+            <div class="price">Rs.430</div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="product1.jpeg" />
+          </div>
+          <div class="content">
+            <h3>whiff coffee</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">Rs.390</div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+          <div class="image">
+            <img src="product2.jpg" />
+          </div>
+          <div class="content">
+            <h3>gourmet coffee</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">Rs.400</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="review" id="review">
+      <h1 class="heading">customer's <span>review</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <p>
+            This place is amazing! They offered the best coffee and showed the
+            best attitude to its costumers. This place is indeed perfect for
+            studying and chilling out.
+          </p>
+          <img src="pic1.jpg" class="user" />
+          <h3>Rahul Morchhale</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+        <div class="box">
+          <p>
+            Will go again.I only popped in to get take-away cappuccinos, but I
+            was struck by how friendly the service was. The cappuccinos were
+            wonderful too! And very well priced.
+          </p>
+          <img src="pic3.jpg" class="user" />
+          <h3>Sudarshan Gour</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+        <div class="box">
+          <p>
+            This coffee shop is my favorite place to hang and do my works. I
+            really like this place because it has a good ambiance and not too
+            crowded as well.
+          </p>
+          <img src="pic3.jpg" class="user" />
+          <h3>Sudarshan gour</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>contact</span>us</h1>
+      <div class="row">
+        <map>
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29523.11530397682!2d77
+.05806291562502!3d22.3389205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x
+397d71658a4f9f5f%3A0x4c93d1c53eeb7580!2sCoffee%20House%20cafe!5e0!3m2!1sen!2sin!4
+v1669823563377!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-
+downgrade"
+          ></iframe
+        ></map>
+        <form action="">
+          <h3>get in touch</h3>
+          <div class="inputbox">
+            <span class="fas fa-user"></span>
+            <input type="text" placeholder="enter name" />
+          </div>
+          <div class="inputbox">
+            <span class="fas fa-envelope"></span>
+            <input type="email" placeholder="enter email" />
+          </div>
+          <div class="inputbox">
+            <span class="fas fa-phone"></span>
+            <input type="number" placeholder="number" />
+          </div>
+          <input type="text" value="contact now" class="btn" />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
+<script src="coffee.js"></script>
